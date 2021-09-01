@@ -6,12 +6,10 @@
 var numeroCelle=parseInt(prompt("Ciao,scegli il numero di celle tra 1 e 10"));
 
  function creazioneGriglia(num1){
-    for (var i=1;i<=100;i++){
+    for (var i=1;i<=numeroCelle.length;i++){
         document.getElementById("campo").innerHTML+=`<div class="caselle">${i}</div>`;
     } 
   }
-
-
 
   creazioneGriglia(numeroCelle);
 
